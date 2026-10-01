@@ -23,7 +23,8 @@ Proje, 3. Normal Form (3NF) kurallarına uygun olarak tasarlanmış en az 8 ili�
   - *Triggers:* Tedavi uygulandığında ilaç stoğunun otomatik düşürülmesi.
 - **Arayüz:** ASP.NET Core MVC (Web tabanlı CRUD ve raporlama ekranları)
 
------Proje Geliştirme Günlüğü----
+$$\color{red}\text{-----Proje Geliştirme Günlüğü----
+}$$
 
 ** 1. Hafta: Veritabanı Mimarisi ve Tablo Tasarımı
 - Proje gereksinimleri analiz edilerek sistemin ihtiyaç duyduğu varlıklar (Entities) belirlendi.
