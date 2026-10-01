@@ -22,3 +22,12 @@ Proje, 3. Normal Form (3NF) kurallarına uygun olarak tasarlanmış en az 8 ili�
   - *Stored Procedures:* Muayene kaydı oluşturma ve randevu tamamlama süreçleri.
   - *Triggers:* Tedavi uygulandığında ilaç stoğunun otomatik düşürülmesi.
 - **Arayüz:** ASP.NET Core MVC (Web tabanlı CRUD ve raporlama ekranları)
+
+-----Proje Geliştirme Günlüğü----
+
+** 1. Hafta: Veritabanı Mimarisi ve Tablo Tasarımı
+- Proje gereksinimleri analiz edilerek sistemin ihtiyaç duyduğu varlıklar (Entities) belirlendi.
+- 3NF normalizasyon kurallarına uygun olarak 10 adet ilişkisel tablo tasarlandı.
+- Tablolar arası 1-N ve N-N (TedaviDetay köprü tablosu ile) bağlantıları `FOREIGN KEY` kısıtları ile kuruldu.
+- Veri tutarlılığını sağlamak amacıyla `CHECK`, `UNIQUE` ve `DEFAULT` kısıtları (constraints) uygulandı.
+- `VeterinerDB` veritabanı ve tüm tablolar MS SQL Server üzerinde başarıyla oluşturuldu.
