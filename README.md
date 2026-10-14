@@ -32,3 +32,12 @@ $$\color{red}\text{-----Proje Geliştirme Günlüğü----
 - Tablolar arası 1-N ve N-N (TedaviDetay köprü tablosu ile) bağlantıları `FOREIGN KEY` kısıtları ile kuruldu.
 - Veri tutarlılığını sağlamak amacıyla `CHECK`, `UNIQUE` ve `DEFAULT` kısıtları (constraints) uygulandı.
 - `VeterinerDB` veritabanı ve tüm tablolar MS SQL Server üzerinde başarıyla oluşturuldu.
+
+
+ ** 2. Hafta: Veri Girişi (DML) ve Kısıt Testleri
+Bu haftaki çalışmada veritabanı şemasındaki tablolara örnek verilerin eklenmesi (`INSERT INTO`) ve tablo kısıtlarının (`CONSTRAINTS`) doğrulanması işlemleri tamamlanmıştır.
+* **Temel Tablo Verileri:** Tür, ırk, müşteri ve veteriner hekim kayıtları oluşturuldu.
+* **Hayvan Kayıtları (`Hayvanlar`):** Çip numarası (`UNIQUE`), cinsiyet (`CHECK`) ve doğum tarihi bilgileriyle birlikte müşteri-ırk-tür bağlantıları (`FOREIGN KEY`) kurularak kayıtlar eklendi.
+* **Muayene ve Tedavi Kayıtları (`Muayeneler` & `TedaviDetay`):** Geçmiş muayene kayıtları, teşhisler ve uygulanan tedavi detayları ilişkisel bütünlüğe uygun olarak girildi.
+* **Randevu Sistemi (`Randevular`):** İleri ve geçmiş tarihli randevu kayıtları; `Bekliyor`, `Tamamlandı` ve `İptal` durum kısıtlarına (`CHECK`) uygun şekilde sisteme işlendi.
+* **Veri Tipi ve Karakter Uyumluluğu:** Türkçe karakter destekleri (`NVARCHAR` / `N'...'`) ve tarih-saat (`DATETIME`) format uyuşmazlıkları giderildi.
